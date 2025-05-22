@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Projects</title>
+  <style>
+    html {
+      height: 100%;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #2e2e44;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    .back-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background-color: #fff;
+      color: #000;
+      padding: 8px 12px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+      z-index: 1000;
+      border: 1px solid #ccc;
+    }
+
+    .back-button:hover {
+      background-color: #e0e0e0;
+    }
+
+    header {
+      background: rgb(223, 220, 240);
+      color: #333;
+      padding: 20px 0;
+      text-align: center;
+      margin: 0 auto 30px auto;
+      width: 80%;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .content {
+      flex: 1;
+    }
+
+    .heading-box {
+      display: inline-block;
+      background-color: #fff;
+      padding: 0.5em 1em;
+      border-radius: 0.5em;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+      margin-bottom: 20px;
+      max-width: 300px;
+    }
+
+    .section-divider {
+      border: none;
+      border-top: 2px solid #ccc;
+      width: 100%;
+      margin: 40px 0;
+    }
+
+    .projects-container {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+    }
+
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 1100px;
+    }
+
+    .project {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+    }
+
+    .project h2 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .project p {
+      margin-bottom: 15px;
+      color: #666;
+    }
+
+    .project a {
+      display: inline-block;
+      background: #333;
+      color: #fff;
+      padding: 10px 15px;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background 0.3s ease;
+    }
+
+    .project a:hover {
+      background: #555;
+    }
+
+    ul {
+      margin-top: 0;
+      margin-bottom: 10px;
+      padding-left: 20px;
+    }
+
+    .explore-btn {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .explore-btn a.text-link {
+      background: #fff;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 15px;
+      border-radius: 5px;
+    }
+
+    .explore-btn a.arrow-btn {
+      padding: 10px 15px;
+      font-size: 20px;
+      line-height: 1;
+      display: inline-block;
+      background: #80d0ff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 50%;
+      transition: background 0.3s ease;
+    }
+
+    .explore-btn a.arrow-btn:hover {
+      background: #80d0ff;
+    }
+
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      font-weight: bold;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        width: 95%;
+      }
+
+      .projects-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .explore-btn {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a href="/" class="back-button">&#8592; Back</a>
+  <header>
+    <h1>My Projects</h1>
+  </header>
+
+  <div class="content">
+    <h2 class="heading-box">Machine Learning</h2>
+    <div class="projects-container">
+      <section class="projects">
+        <div class="project">
+          <h2><strong>Happiness Report</strong></h2>
+          <p style="margin-bottom: 0;">Complete data science project that included:</p>
+          <ul>
+            <li>Complete data preparation</li>
+            <li>Feature selection and model training</li>
+            <li>Deployment through Streamlit!</li>
+          </ul>
+          <a href="https://github.com/noob-noob1/Happiness-report" target="_blank" rel="noopener">View Project</a>
+        </div>
+        <div class="project">
+          <h2>Maintenance Time Estimator</h2>
+          <p style="margin-bottom: 0;">Created a tool that predicts maintenance time for my company</p>
+          <ul>
+            <li>Built-in data collection mechanisms</li>
+            <li>After 1 year of data collection, prepared and cleaned data</li>
+            <li>Built Machine Learning models and picked the best one for task predictions</li>
+          </ul>
+          <a href="https://github.com/noob-noob1/MKHS-Project" target="_blank" rel="noopener">View Project</a>
+        </div>
+        <div class="project">
+          <h2>IRCC Project</h2>
+          <p style="margin-bottom: 0;">Led the project to create a tool that shows future population projections against Canadian infrastructure</p>
+          <ul>
+            <li>Collected data from various sources</li>
+            <li>Prepared data and developed ML models</li>
+            <li>Integrated predictions of population and infrastructure (housing, education, healthcare) in a visualization tool</li>
+          </ul>
+          <a href="https://github.com/noob-noob1/IRCC_Project" target="_blank" rel="noopener">View Project</a>
+        </div>
+      </section>
+
+      <div class="explore-btn">
+        <a href="https://github.com/noob-noob1?tab=repositories" class="text-link" target="_blank" rel="noopener">More machine learning projects</a>
+        <a href="https://github.com/noob-noob1?tab=repositories" class="arrow-btn" target="_blank" rel="noopener">➜</a>
+      </div>
+    </div>
+
+    <hr class="section-divider" />
+
+    <h2 class="heading-box">Applications</h2>
+    <div class="projects-container">
+      <section class="projects">
+        <div class="project">
+          <h2><strong>Image recognition and Audio Generation</strong></h2>
+          <p style="margin-bottom: 0;">User can upload any image, and the app would generate a text description of the image, and an audio reading what the app sees in the picture</p>
+          <ul>
+            <li>Used foundational large language models (LLM) to generate text and audio</li>
+            <li>Used Gradio for interface creation</li>
+            <li>Used Hugging Face for app creation and deployment</li>
+          </ul>
+          <a href="https://huggingface.co/spaces/Yaaad/my-image-desc-app">View Application</a>
+        </div>
+        <div class="project">
+          <h2><strong>House Price Predictor</strong></h2>
+          <p style="margin-bottom: 0;">User can plug in multiple variables, and through that, can predict the price of a house</p>
+          <ul>
+            <li>Using a big dataset of prices of different households, the data was cleaned and trained</li>
+            <li>Random Forest was picked as the best model</li>
+            <li>Streamlit was used for both UI generation and deployment</li>
+          </ul>
+          <a href="https://real-estate-price-prediction-mc8qmxxkwgmsq85lrzrscs.streamlit.app/">View Application</a>
+        </div>
+      </section>
+
+      <div class="explore-btn">
+        <a href="https://share.streamlit.io/?utm_source=streamlit&utm_medium=referral&utm_campaign=main&utm_content=-ss-streamlit-io-topright" class="text-link" target="_blank" rel="noopener">More APPs</a>
+        <a href="https://share.streamlit.io/?utm_source=streamlit&utm_medium=referral&utm_campaign=main&utm_content=-ss-streamlit-io-topright" class="arrow-btn" target="_blank" rel="noopener">➜</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <a href="/">Home</a> | <a href="/contact">Contact</a>
+  </footer>
+</body>
+</html>

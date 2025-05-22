@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <style>
+    /* Basic reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #e0f7fa; /* Light blue shade background */
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    header {
+      background: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .profile-img {
+      width: 400px;
+      height: 400px;
+      border-radius: 50%; /* Makes the image circular */
+      object-fit: cover;
+      object-position: center top; /* Displays the top part of the image */
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #333;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to my Homepage</h1>
+  </header>
+  <div class="container">
+    <!-- If your image is in the same folder as index.html, just write its name -->
+    <img src="{{ url_for('static', filename='Yad.jpg') }}" alt="My Picture" class="profile-img">    <p>Hello, I'm Yad. Welcome to my personal website!</p>
+    <!-- This button redirects to the projects page -->
+    <a href="/Projects" class="btn">View Projects</a>
+    <a href="/contact" class="btn">Contact me</a>
+
+  </div>
+</body>
+</html>
