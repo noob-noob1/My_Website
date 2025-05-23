@@ -52,7 +52,7 @@ def contact():
 
         try:
             mail.send(msg)
-            flash("Message sent! Thank you for contacting me.", "success")
+            flash("Message sent! Thank you for contacting .", "success")
         except Exception as e:
             print(e)
             flash("Failed to send message. Please try again later.", "error")
