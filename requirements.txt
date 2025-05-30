@@ -101,7 +101,7 @@ nbformat==5.10.4
 nest-asyncio==1.6.0
 notebook==7.2.2
 notebook_shim==0.2.4
-numpy==1.26.4
+numpy
 opencv-python==4.11.0.86
 orjson==3.10.16
 overrides==7.7.0
@@ -139,7 +139,6 @@ python-json-logger==2.0.7
 python-multipart==0.0.20
 python-slugify==8.0.4
 pytz==2024.1
-pywin32==306
 pywinpty==2.0.13
 PyYAML==6.0.2
 pyzmq==26.0.3
